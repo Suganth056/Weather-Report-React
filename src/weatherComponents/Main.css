@@ -1,0 +1,96 @@
+.Main{
+    background-color:rgb(253, 253, 249);
+    min-width:400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.Main .input-box{
+    
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Main .input-box form{
+    margin: 10px 0px;
+    width: 90%;
+    border: 2px solid grey;
+    border-radius:5px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.Main .input-box form input{
+    width: 75%;
+    font-size: 15px ;
+    font-weight:600;
+    color: rgb(7, 7, 7);
+    
+    /* padding: 5px; */
+}
+.Main .input-box form button{
+    width: 10%;
+    cursor: pointer;
+}
+.Main .input-box form input,.Main .input-box form button{
+    border: none;
+    outline: none;
+    padding:10px;
+}
+.display-content{
+    width: 100%;
+}
+.content-box{
+    text-align: center;
+}
+.content-box img{
+    min-width: 150px;
+    width: 150px;
+    min-height:150px;
+    margin:20px 0px;
+    /* border: 1px solid red; */
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.details div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+}
+.city-name{
+    color:rgb(189, 186, 47);
+}
+
+.displayC{
+    display: none;
+}
+
+
+@media(max-width:500px){
+    .Main{
+        min-width:90%;
+        /* height: 100vh; */
+        /* background-color: aquamarine; */
+        /* border: 1px solid gray; */
+    }
+    .content-box img{
+        min-width: 120px;
+        width: 120px;
+        min-height:120px;
+        margin:20px 0px;
+        /* border: 1px solid red; */
+    }
+}
